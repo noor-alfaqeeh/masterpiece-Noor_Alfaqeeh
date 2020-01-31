@@ -685,6 +685,10 @@ h6 {
   font-size: 15px;
   color: #d8eafe;
 }
+#why-us a{
+    text-decoration: none;
+    color: white;
+}
 
 #why-us .card .readmore {
   color: #fff;

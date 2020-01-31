@@ -3,17 +3,20 @@
 @section('content')
 
 
-    @if($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
-    <div class="container start">
 
+    <div class="container start">
+        <header class="section-header text-center">
+            <h3>Edit Post</h3>
+        </header>
+        @if($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <form class="py-5 px-5 form" method="post" action="{{ route('posts.update',$posts->id) }}" enctype="multipart/form-data">
             @csrf
             @method('PATCH')

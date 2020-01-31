@@ -18,6 +18,12 @@ Route::resource('profile','ProfileController');
 Route::resource('major','MajorController');
 Route::resource('projects','ProjectController');
 Route::resource('posts','PostController');
+Route::resource('jobs','JobController');
+Route::get('dashboard', function(){
+    return view('dashboard');
+});
+Route::resource('our-work','WorkController');
+
 
 
 

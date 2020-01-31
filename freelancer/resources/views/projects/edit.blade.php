@@ -3,7 +3,9 @@
 @section('content')
 
     <div class="container start">
-
+        <header class="section-header text-center">
+            <h3>Edit Project</h3>
+        </header>
         <form class="py-5 px-5 form" action="{{route("projects.update",$projects['id'])}}" method="post" enctype="multipart/form-data">
             @csrf
             @method('PATCH')

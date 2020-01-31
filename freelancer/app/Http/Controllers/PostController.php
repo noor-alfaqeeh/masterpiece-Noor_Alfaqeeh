@@ -16,8 +16,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts=Post::all();
-        return view('posts.index',['posts'=>$posts]);
+        $data=Major::all();
+        $posts=Post::where ('user_id',auth()->id())->get();
+        return view('posts.index',['posts'=>$posts,'data'=>$data]);
     }
 
     /**
@@ -42,15 +43,14 @@ class PostController extends Controller
         $request->validate([
             'title'                =>  'required',
             'description'          =>  'required',
-            'major_id'          =>  'required',
-            'user_id'        =>auth()->id()
+            'major_id'          =>  'required'
         ]);
 
         $posts = array(
             'title'          =>$request->title,
             'description'    =>$request->description,
-            'user_id'        =>auth()->id(),
-            'major_id'       => $request->major_id
+            'major_id'       => $request->major_id,
+            'user_id'        =>auth()->id()
 
         );
         Post::create($posts);
@@ -97,8 +97,7 @@ class PostController extends Controller
         $this->validate($request,[
             "title"    => "required",
             "description"  => "required",
-            "major_id"     =>"required",
-            'user_id'        =>auth()->id()
+            "major_id"     =>"required"
         ]);
         $posts->title=$request->title;
         $posts->description=$request->description;

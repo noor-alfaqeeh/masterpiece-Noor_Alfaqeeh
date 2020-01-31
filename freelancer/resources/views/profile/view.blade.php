@@ -2,7 +2,9 @@
 
 @section('content')
     <div class="container start">
-
+        <header class="section-header pb-4">
+            <h3>My Profile</h3>
+        </header>
         @foreach($profile as $row)
         <div class="row mt-4">
             <div class="col-3">
@@ -22,7 +24,11 @@
                     <dd class="col-sm-8"><p>{{ $row -> brief }}</p></dd>
 
                     <dt class="col-sm-4"><h4>Major</h4></dt>
-                    <dd class="col-sm-8"><p>{{ $row -> major_name }}</p></dd>
+                    @foreach($data as $info)
+                        @if($info->id == $row->major_id)
+                    <dd class="col-sm-8"><p>{{ $info -> major_name }}</p></dd>
+                        @endif
+                    @endforeach
 
                 </dl>
 
@@ -32,7 +38,6 @@
             @csrf
             @method('DELETE')
             <a href="{{ route('profile.edit', $row->id) }}" class="btn btn-warning">Edit</a>
-            <a class="btn btn-primary" role="button" href="{{ route('profile.create') }}">Manage Profile</a>
         </div>
     </div>
     @endforeach

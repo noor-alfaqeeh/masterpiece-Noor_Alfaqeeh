@@ -10,16 +10,6 @@
                         <p>{{ $projects -> description }}</p>
                     </header>
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <ul id="portfolio-flters">
-                                <li data-filter="*" class="filter-active">All</li>
-                                <li data-filter=".filter-image">Images</li>
-                                <li data-filter=".filter-plan">Plans</li>
-                            </ul>
-                        </div>
-                    </div>
-
                     <div class="row portfolio-container">
 
                         <div class="col-lg-4 col-md-6 portfolio-item filter-image">

@@ -2,9 +2,10 @@
 
 @section('content')
     <div class="container-fluid start">
-        <div class="text-right">
-            <a class="btn btn-primary" role="button" href="{{ route('projects.create') }}">Add Projects</a>
-        </div>
+        <header class="section-header pb-4">
+            <h3 style="display: inline; margin-left: 850px;">Projects</h3>
+            <a class="btn btn-primary float-right" role="button" href="{{ route('projects.create') }}" style="margin-right: 350px;">Add Project</a>
+        </header>
 
             @foreach($projects as $project)
 

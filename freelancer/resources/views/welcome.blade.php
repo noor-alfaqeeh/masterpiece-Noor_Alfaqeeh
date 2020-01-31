@@ -12,7 +12,7 @@
         </div>
 
         <div class="intro-info">
-            <h2>We provide<br><span>talented solutions</span><br>for your work!</h2>
+            <h2>We provide<br><span>talented ENGINEERS</span><br>for your work!</h2>
             <div>
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
                 <a href="#services" class="btn-services scrollto">Our Services</a>
@@ -46,7 +46,7 @@
                     </p>
 
                     <div class="icon-box wow fadeInUp">
-                        <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+                        <div class="icon"><i class="fab fa-searchengin"></i></div>
                         <h4 class="title"><a>Quick Response</a></h4>
                         <p class="description">Let freelancers discover you Post projects quickly,
                             receive responses
@@ -54,13 +54,13 @@
                     </div>
 
                     <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="icon"><i class="fa fa-photo"></i></div>
+                        <div class="icon"><i class="fas fa-dollar-sign"></i></div>
                         <h4 class="title"><a>Discover fixed price offers.</a></h4>
                         <p class="description">Explore fixed-price offers from a little price — Giving you the freedom to test ideas cost effectively. Once you're happy with the results, request a follow-on project.</p>
                     </div>
 
                     <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="icon"><i class="fa fa-bar-chart"></i></div>
+                        <div class="icon"><i class="fas fa-tasks"></i></div>
                         <h4 class="title"><a>Collaborate with ease, and speed.</a></h4>
                         <p class="description">We give you a clearly marked inbox of tasks, structured threads for communication and simple, organised invoicing.</p>
                     </div>
@@ -83,7 +83,7 @@
 
             <header class="section-header">
                 <h3>Services</h3>
-                <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+                <p>We provide you two main services:</p>
             </header>
 
             <div>
@@ -133,7 +133,7 @@
 
                 <div class="col-lg-4 mb-4">
                     <div class="card wow bounceInUp">
-                        <i class="fa fa-diamond"></i>
+                        <i class="far fa-clock"></i>
                         <div class="card-body">
                             <h5 class="card-title">Flexibility</h5>
                             <p class="card-text">Work remotely & control your working hours.</p>
@@ -144,7 +144,7 @@
 
                 <div class="col-lg-4 mb-4">
                     <div class="card wow bounceInUp">
-                        <i class="fa fa-language"></i>
+                        <i class="fas fa-globe-asia"></i>
                         <div class="card-body">
                             <h5 class="card-title">Access to Opportunity</h5>
                             <p class="card-text">Work with great companies around the world.</p>
@@ -155,7 +155,7 @@
 
                 <div class="col-lg-4 mb-4">
                     <div class="card wow bounceInUp">
-                        <i class="fa fa-object-group"></i>
+                        <i class="far fa-credit-card"></i>
                         <div class="card-body">
                             <h5 class="card-title">Seamless payments</h5>
                             <p class="card-text">Get paid securely & and avoid a hassle in collecting payments from clients.</p>
@@ -361,7 +361,7 @@
 
                 <div class="col-lg-6">
                     <div class="map mb-4 mb-lg-0">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.6622549367594!2d35.90707371464266!3d31.970058231998408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca12ce1b9c62b%3A0x21b9b701f3f4ee86!2sOrange%20Coding%20Academy!5e0!3m2!1sen!2sjo!4v1580122404241!5m2!1sen!2sjo" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -369,7 +369,7 @@
                     <div class="row">
                         <div class="col-md-5 info">
                             <i class="ion-ios-location-outline"></i>
-                            <p>A108 Adam Street, NY 535022</p>
+                            <p>King hussein Street</p>
                         </div>
                         <div class="col-md-4 info">
                             <i class="ion-ios-email-outline"></i>
@@ -377,7 +377,7 @@
                         </div>
                         <div class="col-md-3 info">
                             <i class="ion-ios-telephone-outline"></i>
-                            <p>+1 5589 55488 55</p>
+                            <p>+123456789</p>
                         </div>
                     </div>
 

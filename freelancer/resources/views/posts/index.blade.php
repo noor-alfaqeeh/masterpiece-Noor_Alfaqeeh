@@ -2,9 +2,11 @@
 
 @section('content')
     <div class="container-fluid start">
-        <div class="float-right">
-            <a class="btn btn-primary" role="button" href="{{ route('posts.create') }}">Add Post</a>
-        </div>
+        <header class="section-header">
+            <h3 style="display: inline; margin-left: 900px;">Posts</h3>
+            <a class="btn btn-primary float-right" role="button" href="{{ route('posts.create') }}" style="margin-right: 350px;">Add Post</a>
+        </header>
+
             @foreach($posts as $post)
         <div class="posts mx-auto">
         <div class="card my-3">
@@ -25,7 +27,11 @@
                 <div>
                     <div class="card-body py-4 px-4">
                         <h4 class="card-title">{{$post->title}}</h4>
-                        <p class="card-text"> Major: {{$post -> major_id}}</p>
+                        @foreach($data as $row)
+                            @if($row->id == $post->major_id)
+                        <p class="card-text"> Major: {{$row -> major_name}}</p>
+                            @endif
+                        @endforeach
                         <div class="posts_icon">
                             <ul class="utility-list">
                                 <li><i class="fas fa-user-alt"></i><a href="#">{{($post->major_id)+13}}</a></li>
@@ -34,10 +40,7 @@
                         </div>
                         <p class="card-text"><strong>Description</strong></p>
                         <p class="card-text">{{$post -> description}}</p>
-                        <div>
-                            <button type="button" class="btn btn-primary">Bid Now</button>
-                            <button type="button" class="btn btn-outline-primary">Chat</button>
-                        </div>
+
                     </div>
 
                 </div>

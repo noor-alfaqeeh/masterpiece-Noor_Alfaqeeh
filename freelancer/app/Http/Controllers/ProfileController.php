@@ -15,8 +15,9 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        $profile=Profile::all();
-        return view('profile.view',['profile'=>$profile]);
+        $data=Major::all();
+        $profile=Profile::where ('user_id',auth()->id())->get();
+        return view('profile.view',['profile'=>$profile,'data'=>$data]);
     }
 
     /**

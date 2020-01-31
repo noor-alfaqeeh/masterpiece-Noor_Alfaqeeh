@@ -1,3 +1,5 @@
+
+<div class="container start">
 @if(session('success'))
     <div class="alert alert-success" role="alert">
         {{session('success')}}
@@ -9,3 +11,4 @@
         {{session('warning')}}
     </div>
 @endif
+</div>
